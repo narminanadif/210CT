@@ -1,0 +1,18 @@
+#user input a number so it is an interger and not a string
+user = int(input("Please enter a number: "))
+x = 1
+total = 0
+#divide is any number greater than 1 
+divide = 4
+#loop until division is <1
+while divide>1:
+#whatever the user inputs divide by 5 to the power of x
+    divide = user/5**x
+#rounds the number down if it is a decimal number 
+    divide = int(divide)
+#recursive
+    x = x+1
+#adding up all the answers which will give us the number of trailing zeros 
+    total = total+divide
+
+print(total)
