@@ -1,0 +1,10 @@
+def vowel(c):
+    emptystring = ""
+    vowels = ('a', 'e', 'i', 'o', 'u')
+    for x in c:
+#if statement to find whether a vowel is inside the inputted word
+        if x in vowels:
+#takes the old value of c and replaces the new value of c 
+            c = c.replace(x, "")
+    return print(c)
+
