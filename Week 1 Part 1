@@ -1,0 +1,20 @@
+#getting the randint built in function from the library
+from random import randint
+#creating a list which is assigned to a name
+nlist = []
+#using a  while loop which loops until the list is full
+while len(nlist) < 10:
+#the data entered is assigned to a variable called numstring
+    numstring = input("Please enter numbers: ")
+#puts the numbers stored in numstring into the list"""
+    var = nlist.append(numstring)
+#a for loop which stores the numbers into x"""
+for x in range (0,9):
+#gets randomly stored numbers and puts them in x"""
+    var2 = randint(0,9)
+#takes of thee last number in nlist and store it in var3"""
+    var3 = nlist.pop()
+#imports the number from var 2 and var3"""
+    nlist.insert(var2,var3) 
+#print the list of numbers1
+print(nlist)
