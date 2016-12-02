@@ -1,0 +1,14 @@
+#user inputs a number and is stored as an integer 
+number = int(input("Please enter a number: "))
+#if statement where the number is greater than 1 
+if number > 1:
+#for loop until it reaches 2 up to the number that is inputted 
+   for i in range(2,number):
+#if statement where if the number does not leave a remainder then not prime 
+      if (number % i) == 0:
+         print(number,"is not a prime number")
+#break so that it does not keep looping 
+         break
+   else:
+#if the condition is met then it prints the below
+      print(number,"is a prime number")
