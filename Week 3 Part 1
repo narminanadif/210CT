@@ -1,0 +1,8 @@
+#user inouts a sentence which is stored as a string 
+sentence = input("Please enter a sentence: ")
+#using the split function to seperate the words 
+strings = sentence.split()
+#reversed function mixes the words backwards and joins them together 
+sentence_reversed = " ".join(reversed(strings))
+#prints the reversed sentence 
+print(sentence_reversed)
