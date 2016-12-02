@@ -1,0 +1,29 @@
+array = [5,7,9,11,13,17]
+
+#no of integers within array
+number = 6
+#the two values that make up the interval
+low = 18 
+high = 20
+
+def binary(array, high, low, number):
+    begin = 0
+    end = number
+#while loop to using the abve numbers as the condition 
+    while(begin < end):
+#finds the midpoint of given list
+        mid = int (begin + (end - begin) / 2)
+#if statement to compare each integer to the previous one 
+        if low > array[mid] and high > array[mid]:
+            begin = mid +1
+
+        elif low < array[mid] and high < array[mid]:
+            end = mid
+
+        else:
+            return True
+
+    return False
+
+print(binary(array,high,low,number))
+
