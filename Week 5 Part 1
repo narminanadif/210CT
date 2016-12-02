@@ -1,0 +1,31 @@
+numbers=[1,2,3,1,4,5,6,8,9]
+
+def maxlen(numbers):
+#list to store any subsequences in ascending order
+    subsequence=[[]]
+    try:
+        for n in range(len(numbers)):
+            print(subsequence)
+#if numbers[n]/next number is less than the next element, add to subsequence
+            if numbers[n] < numbers[n+1]:
+                subsequence[-1].append(numbers[n])
+#if the sequence breaks, create new supsequnce and add to the end of new sequence
+            elif numbers[n] > numbers[n+1]:
+                subsequence[-1].append(numbers[n])
+                subsequence.append([])
+#when it gets to the end of comparing elements, there will be an index error as n+1 is not available
+    except IndexError:
+#checks if the next number fits into subsequence or not       
+        if numbers[-1] > numbers[-2]: 
+            subsequence[-1].append(numbers[-1])
+        else:
+            subequence.append([])
+            subsequence[-1].append(numbers[-1])
+#stores and returns the longest subsequence found           
+    longsub=[]
+    for i in subsequence:
+        if len(i)>len(longsub):
+            longsub=i
+    return longsub
+
+print(maxlen(numbers))
