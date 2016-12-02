@@ -1,0 +1,15 @@
+#user enters a whole number and stored as an integer
+number = int(input("Please enter a number: "))
+count = 0
+square = 0
+#while loop where the condition is greater or equal to 0
+while number >= square:
+             count = count + 1
+             square = count * count
+#if statement to calculate the highest given square             
+if square == number:
+             print(square)
+else:
+             count = count - 1
+             square = count * count
+             print(square)
