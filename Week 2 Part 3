@@ -1,0 +1,27 @@
+Where:
+x = length of matrix row
+A is matrix one
+B is matrix two
+
+ADD(A, B, X)
+	result <- [][]
+	for i=1 to length(X)
+		for j=1 to length(X)
+			result[i][j] <- A[i][j] + B[i][j]
+	return result
+
+SUBTRACT(A, B, X)
+	result<- [][]
+	for i=1 to length(X)
+		for j=1 to length(X)
+			result[i][j] <- A[i][j] + B[i][j]
+	return result
+
+MULTIPLY(A, B, X)
+	result<- [][]
+	for i=1 to length(X)
+		for j=1 to length(X)
+			for k in range(0, X)
+				result[i][j] += one[i][j] * two[i][k]
+	return result
+
